@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <meta charset='utf-8'>
+  <title>Flexbox Website Layout</title>
+  <style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+  }
+  #main {
+    display: flex;
+    flex: 1;
+  }
+  #main > article {
+    flex: 1;
+    order: 1;
+  }
+  #main > nav, 
+  #main > aside {
+    flex: 0 0 20vw;
+  }
+  #main > nav {
+    background: #D7E8D4;
+    order: 3;
+  }
+  #main > aside {
+    background: beige;
+    order: 2;
+  }
+  header, footer {
+    background: yellowgreen;
+    height: 20vh;
+    align-content: center;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+  </style>
+  <body>
+    <header>Healthy Eating</header>
+    <div id="main">
+      <article>
+        <h2>What is a healthy diet?</h2>
+        <p>Eating a healthy diet is not about strict limitations, staying unrealistically thin, or depriving yourself of the foods you love. Rather, it’s about feeling great, having more energy, improving your health, and boosting your mood.</p>
+      </article>
+      <article>
+        <h2>The fundamentals of healthy eating</h2>
+        <p>While some extreme diets may suggest otherwise, we all need a balance of protein, fat, carbohydrates, fiber, vitamins, and minerals in our diets to sustain a healthy body. You don’t need to eliminate certain categories of food from your diet, but rather select the healthiest options from each category.</p>
+      </article>
+      <article>
+        <h2>Making the switch to a healthy diet</h2>
+        <p>Switching to a healthy diet doesn’t have to be an all or nothing proposition. You don’t have to be perfect, you don’t have to completely eliminate foods you enjoy, and you don’t have to change everything all at once—that usually only leads to cheating or giving up on your new eating plan.</p>
+        
+        <p>A better approach is to make a few small changes at a time. Keeping your goals modest can help you achieve more in the long term without feeling deprived or overwhelmed by a major diet overhaul. Think of planning a healthy diet as a number of small, manageable steps—like adding a salad to your diet once a day.</p>
+      </article>
+      <nav>ABOUT US:
+        <ul>  
+          <li>  
+          <a href="#"> Home </a>  
+          </li>  
+          <li>  
+          <a href="#"> About </a>  
+          </li>  
+          <li>  
+          <a href="#"> Contact </a>  
+          </li>  
+          <li> <a href="#"> Terms of use </a>  
+          </li>  
+          <li>  
+          <a href="#"> Join Us </a>  
+          </li>  
+          </ul>  </nav>
+      <aside>Related
+        <p><a href="https://www.helpguide.org/articles/healthy-eating/cooking-at-home.htm"> Cooking at Home</a></p>
+        <p><a href="https://www.helpguide.org/articles/healthy-eating/eat-healthy-for-less.htm"> Eating Well as You Age</a></p>
+      </aside>
+    </div>
+    <footer>Join Our Newsletter</footer>
+  </body>
+</html>
